@@ -1,0 +1,28 @@
+#!/bin/bash
+rm -R etc/skel
+wget -c http://www.amazonicadesign.com/zip/slimstarlight-settings.7z
+7z x slimstarlight-settings.7z -aoa -o.
+rm -r usr/share/bodhibuilde*
+rm -r etc/bodhibuilder
+rm -r usr/bin/bodhibuilder
+rm -r usr/share/doc/bodhibuilder
+rm usr/share/applications/display-im*
+rm -R usr/share/themes/ZOMG-PONIES! usr/share/themes/Default-xhdpi usr/share/themes/Xfce-orange usr/share/themes/Xfce-saltlake usr/share/themes/Xfce-4.0
+rm var/cache/debconf/*-old
+rm usr/share/applications/display-im* etc/xdg/autostart/*dpkg-dist
+rm usr/share/fonts/truetype/nanum/NanumBarunGothicBold.ttf
+rm usr/share/applications/display-im*
+rm usr/share/applications/audacious-qt*
+rm var/cache/lsc_packages.db
+rm -R usr/share/icons/Humanity-Dark usr/share/icons/ubuntu-mono-dark
+rm usr/share/app-install/icons/hb-icon.svg usr/share/app-install/icons/cortina.svg usr/share/app-install/icons/thawab.svg
+rm var/cache/debconf/*-old var/cache/apt/archives/* var/cache/apt/archives/after/* #var/cache/apt/*
+rm -R root/* root/.*
+mkdir dev/dri/
+mkdir var/crash/
+touch var/crash/crash.ini
+chmod +x var/crash/crash.ini
+find * -type f -name '*-old*' -delete
+find * -type f -name "(__pycache__|\.pyc|\.pyo$)" -delete
+rm slimstarlight-settings.7z
+rm xfceinside

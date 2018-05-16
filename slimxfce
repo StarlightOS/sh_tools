@@ -1,0 +1,54 @@
+#!/bin/bash
+wget -c http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng/libpng12-0_1.2.54-1ubuntu1_amd64.deb
+dpkg -i *.deb
+apt-get install -y -f plymouth-label p7zip*
+apt-get install -y -f
+wget -c http://www.amazonicadesign.com/zip/slimstarlight-settings.7z
+7z x slimstarlight-settings.7z -aoa -o/
+apt-get update
+#seahorse apt-offline
+apt-get install -y -f indicator-bluetooth gir1.2-gnomebluetooth-1.0 gnome-bluetooth libgnome-bluetooth13 pulseaudio-module-bluetooth preload unrar gfxboot-theme-ubuntu curlew zsync libsnmp-base clementine python3-systemd bc libp11-kit-gnome-keyring fonts-lato pkg-config libgdk-pixbuf2.0-dev libpam-gnome-keyring accountsservice acpi-support dbus-user-session fonts-freefont-ttf gnome-keyring numix-gtk-theme kerneloops-daemon gtk2-engines:amd64 adwaita-icon-theme minwaita-theme mintdrivers albert xinit xserver-xorg-video-all xfce4 ultra-flat-icons elementary-icon-theme pulseaudio-equalizer vimix-gtk-themes super-flat-remix-icons arc-theme mencoder squashfs-tools libgl1-mesa-dev libqtgui4:i386 openshot wxhexeditor audacity libreoffice-writer dolphin-emu polari retroarch libreoffice-calc libreoffice-impress vlc transmission blender musescore gimp mintstick mintbackup ppsspp gdebi faenza-icon-theme kazam gnome-contacts mousepad evince eog gstreamer1.0-plugins-base gstreamer1.0-pulseaudio gstreamer1.0-plugins-good gstreamer1.0-plugins-ugly libgif-dev thunderbird xfce-keyboard-shortcuts libxfce4ui-common  xfce4-xkb-plugin orage menulibre libdvd-pkg xfce4-places-plugin xfce4-dict libtool glib-2.0 gtk3-engines-xfce ubuntu-mono humanity-icon-theme libgdk-pixbuf2.0-dev libcairo2-dev libvte9 libvte-common systemd upower gtk-theme-config session-migration google-chrome-stable enchant module-init-tools notification-daemon gnome-settings-daemon libcanberra-gtk3-module skypeforlinux atraci ubuntu-drivers-common linux-generic rawtherapee acpid adduser aisleriot alsa-base alsa-utils anacron apparmor app-install-data aptdaemon apt-transport-https apt-utils arj at-spi2-core avahi-autoipd avahi-daemon avahi-utils baobab bash-completion binutils brltty cabextract ca-certificates cheese chkrootkit cifs-utils colord convertall coreutils cups cups-core-drivers dbus dbus-x11 aufs-tools  discover dconf-gsettings-backend dconf-tools desktop-base dialog diffutils dkms dmz-cursor-theme dnsmasq dnsutils dosfstools dvd+rw-tools e2fsprogs ecryptfs-utils eject espeak ethtool exfat-fuse exfat-utils exo-utils extlinux faad fakeroot ffmpeg ffmpeg2theora file-roller findutils fontconfig fonts-guru-extra fonts-kacst-one fonts-khmeros-core fonts-lao fonts-liberation fonts-lklug-sinhala fonts-nanum fonts-noto fonts-noto-hinted fonts-sil-abyssinica fonts-sil-padauk fonts-takao-pgothic fonts-thai-tlwg fonts-tibetan-machine fonts-tlwg-sawasdee friendly-recovery ftp fuse gconf2 gdisk genisoimage gigolo gksu gnome-calculator gnome-codec-install gnome-control-center gnome-disk-utility gnome-font-viewer gnome-mahjongg gnome-mines gnome-network-admin gnome-orca mintinstall gnome-sound-recorder gnome-sudoku gnome-system-monitor gnome-system-tools gnome-themes-standard gnome-user-share gnome-video-effects gnupg2 gnupg-agent gparted greybird-gtk-theme growisofs gsettings-desktop-schemas gsettings-ubuntu-schemas gsfonts gstreamer1.0-libav gstreamer1.0-nice gstreamer1.0-plugins-base gstreamer1.0-plugins-base-apps gstreamer1.0-plugins-good gstreamer1.0-pulseaudio gstreamer1.0-tools gstreamer1.0-x gtk2-engines-murrine gtk2-engines-pixbuf gtk3-engines-unico gucharmap gufw gvfs gvfs-backends gvfs-common gvfs-fuse gzip  hardinfo hddtemp hdparm hfsprogs hfsutils-tcltk hfsutils hostname hplip i965-va-driver icedax id3v2 ideviceinstaller im-config xfce4-indicator-plugin indicator-usb indicator-keylock indicator-sound info init initramfs-tools init-system-helpers inputattach inxi iproute iproute2 iptables iputils-tracepath irqbalance hfsplus winbind fslint plymouth-themes isc-dhcp-common iso-codes isolinux iw jmtpfs keyboard-configuration lame language-selector-gnome liba52-dev libasound2 libasound2-plugins libavcodec-extra libcanberra-gtk-module libdrm-dev libegl1-mesa libdvdnav4 libdvdread4 libflac-dev libgl1-mesa-dri libgl1-mesa-glx libjpeg-progs libmad0 libmpeg2-4 libnotify-bin libnss-mdns libsane-hpaio libsox-fmt-mp3 libudev1:i386 libz-dev lightdm lightdm-gtk-greeter-settings lightdm-gtk-greeter light-locker lintian linux-base linux-firmware linux-libc-dev linux-sound-base lm-sensors localechooser-data locales lrzip lsb-release lshw ltrace manpages menu mesa-utils mime-support minecraft-installer mixxx modemmanager mount mousetweaks mpeg2dec mpeg3-utils mpegdemux mpg123 mpg321 mscompress mtools mtp-tools mugshot nano net-tools network-manager-gnome nfoview nmap ntfs-3g ntp onboard openprinting-ppds openssh-client openssl os-prober p11-kit p11-kit-modules p7zip p7zip-full password-gorilla pavucontrol pciutils pcmciautils pinentry-gnome3 pkg-config playonlinux plymouth-label plymouth-theme-ubuntu-text plymouth-x11 pm-utils policykit-1 policykit-1-gnome policykit-desktop-privileges printer-driver-foo2zjs-common printer-driver-ptouch pulseaudio pulseaudio-utils pychess pyrenamer python-parted reiserfsprogs rename resolvconf rfkill sane-utils sbsigntool screen-resolution-extra shared-mime-info sharutils simple-scan xorriso software-properties-gtk sound-theme-freedesktop sox steam strace syslinux syslinux-utils system-config-printer-gnome system-tools-backends tar tcpd tcpdump telnet testdisk thermald thunar thunar-archive-plugin thunar-volman time tlp ttf-ancient-fonts-symbola ttf-freefont tumbler tumbler-plugins-extra udev udisks2 unace unionfs-fuse unrar unzip update-inetd update-notifier update-notifier-common usb-modeswitch usbmuxd usbutils user-setup util-linux virtualbox-dkms virtualbox-qt vorbis-tools wget whiptail windos-10-themes wireless-tools wpasupplicant x11-session-utils x11-xserver-utils xauth xbitmaps xfpanel-switch xdg-user-dirs xdg-user-dirs-gtk xdg-utils xfburn xfce4-indicator-plugin xfce4-notifyd xfce4-panel xfce4-power-manager xfce4-power-manager-plugins xfce4-screenshooter xfce4-session xfce4-settings xfce4-terminal xfce4-volumed xfce4-whiskermenu-plugin xfconf xfdesktop4 xfonts-100dpi xfonts-75dpi xfonts-cyrillic xfonts-scalable xfonts-wqy xfwm4 xinit xinput xml-core xorg xpad xserver-common xserver-xorg-core xserver-xorg-input-all xserver-xorg-video-all xz-utils zeitgeist-core zenity zenity-common zfs-fuse zip zlib1g --no-install-recommends --no-install-suggests --allow-unauthenticated -o Dpkg::Options::="--force-confold" #--allow-downgrades --allow-remove-essential --allow-change-held-packages
+apt-get install -y -f --no-install-recommends --no-install-suggests --allow-unauthenticated -o Dpkg::Options::="--force-confold" 
+wget -c http://ppa.launchpad.net/noobslab/macbuntu/ubuntu/pool/main/s/slingscold/slingscold_1.2.1.8x~NoobsLab.com_amd64.deb http://ftp.us.debian.org/debian/pool/main/g/gnome-menus2/libgnome-menu2_3.0.1-4_amd64.deb http://ftp.us.debian.org/debian/pool/main/libg/libgee/libgee2_0.6.8-2_amd64.deb http://ftp.us.debian.org/debian/pool/main/libu/libunique/libunique-1.0-0_1.1.6-5_amd64.deb http://www.amazonicadesign.com/zip/bodhibuilder_2.2.7_all.deb #https://github.com/ch1x0r/LinuxRespin/blob/master/ubuntu/xresprobe_0.4.24ubuntu11-0-1-ubuntu16.04.1_amd64.deb  #http://www.amazonicadesign.com/zip/live-installer-slideshow_2015.03.05_all.deb http://www.amazonicadesign.com/zip/live-installer_2017.01.15_all.deb # http://packages.bodhilinux.com/bodhi/pool/main/b/bodhi-uefi-data/bodhi-uefi-data_0.04_all.deb http://archive.ubuntu.com/ubuntu/pool/main/a/apt-clone/apt-clone_0.4.1ubuntu2_all.deb
+wget -c http://amazonicadesign.com/zip/franz_5.0.0-beta.18_amd64.deb #http://www.amazonicadesign.com/zip/messengerfordesktop-2.0.9-linux-amd64.deb http://amazonicadesign.com/zip/whatsapp-desktop_0.4.2-1_amd64.deb
+dpkg -i --force-all *.deb
+apt-get install -y -f --no-install-recommends --no-install-suggests --allow-unauthenticated -o Dpkg::Options::="--force-confold" 
+dpkg -i --force-all *.deb
+mv /etc/lightdm/lightdm-gtk-greeter.conf /etc/lightdm/lightdm.conf
+rm /usr/share/applications/display-im*
+rm -R /usr/share/themes/ZOMG-PONIES! /usr/share/themes/Default-xhdpi /usr/share/themes/Xfce-orange /usr/share/themes/Xfce-saltlake
+rm /var/cache/debconf/*-old
+rm /usr/share/applications/display-im* /etc/xdg/autostart/*dpkg-dist
+mkdir -p /usr/share/plymouth/themes/starlight /lib/plymouth /lib/plymouth/themes /lib/plymouth/themes/starlight
+update-alternatives --install /usr/share/plymouth/themes/default.plymouth default.plymouth /usr/share/plymouth/themes/starlight/starlight.plymouth 100
+update-alternatives --config default.plymouth
+rsync -av --delete /usr/share/plymouth/themes/default.plymouth /lib/plymouth/themes/default.plymouth
+rsync -av --delete /etc/apt/sources.list /etc/bodhibuilder/apt/custom_repos
+tlp start
+chmod 751 /etc/ufw/ufw.conf
+ufw default deny incoming
+ufw enable
+apt-get -y  --purge autoremove
+apt-get autoclean
+apt-get clean
+dpkg --purge $(COLUMNS=200 dpkg -l | grep "^rc" | tr -s ' ' | cut -d ' ' -f 2)
+dpkg-reconfigure libdvd-pkg
+#systemctl disable bluetooth.service
+service preload start
+apt-get dist-upgrade -y -f
+rm *.zip *.deb slimxfce *.7z
+chmod -R 777 /usr/share/VirtualBoxVMs/android
+rm -R /home/starlight/
+mkhomedir_helper starlight
+echo "tmpfs /tmp tmpfs defaults,noexec,nosuid 0 0" /etc/fstab
+echo "blacklist intel_rapl" >> /etc/modprobe.d/blacklist.conf
+echo "blacklist i2c_piix4" >> /etc/modprobe.d/blacklist.conf
+update-menus
+# add unprivileged user for the apt methods
+adduser --force-badname --system --home /nonexistent  \
+     --no-create-home --quiet _apt || true
+chown root:root /usr/bin/sudo && chmod 4755 /usr/bin/sudo
+sudo su - starlight -c 'xfconf-query -c xfwm4 -p "/general/sync_to_vblank" -s true'
+#chmod u+s /usr/lib/dbus-1.0/dbus-daemon-launch-helper
+#chown root:messagebus /usr/lib/dbus-1.0/dbus-daemon-launch-helper
+reboot
