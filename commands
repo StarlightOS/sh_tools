@@ -1,5 +1,7 @@
+This is for compressing the squashfs-root folder
 mksquashfs squashfs-root filesystem.squashfs -b 1048576 -comp xz -Xdict-size 100%  -processors 8
 
+This is for creating the CD iso file
 xorriso -as mkisofs \
   -isohybrid-mbr "/home/erico/isohdpfx.bin" \
   -c isolinux/boot.cat \
@@ -14,11 +16,11 @@ xorriso -as mkisofs \
   -o "/home/erico/Desktop/cd test/new.iso" \
   "/home/erico/Desktop/cd test/"
 
-
+some general git commands
 git add .
 git commit -m -a
 git push origin master
 
+The original and altered(direct link) dropbox urls to the installer
 https://www.dropbox.com/s/wxt5xxgmqtso3ba/new.iso?dl=0
 https://dl.dropboxusercontent.com/s/wxt5xxgmqtso3ba/new.iso?dl=0
-
