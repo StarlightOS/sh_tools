@@ -1,0 +1,32 @@
+#deb http://packages.linuxmint.com/ tara main upstream import backport
+
+#secondary repositories and themes
+deb http://ppa.launchpad.net/xubuntu-dev/extras/ubuntu bionic main
+deb http://archive.canonical.com/ubuntu bionic partner
+deb http://ppa.launchpad.net/gnome3-team/gnome3-staging/ubuntu bionic main
+deb http://ppa.launchpad.net/noobslab/icons/ubuntu zesty main
+deb http://ppa.launchpad.net/noobslab/icons/ubuntu yakkety main
+deb http://ppa.launchpad.net/noobslab/icons/ubuntu bionic main
+deb http://ppa.launchpad.net/noobslab/icons2/ubuntu zesty main
+deb http://ppa.launchpad.net/noobslab/icons2/ubuntu yakkety main
+deb http://ppa.launchpad.net/noobslab/themes/ubuntu yakkety main
+deb http://ppa.launchpad.net/noobslab/themes/ubuntu zesty main
+deb http://ppa.launchpad.net/nilarimogard/webupd8/ubuntu artful main
+
+#apps and indicators
+deb http://ppa.launchpad.net/gottcode/gcppa/ubuntu bionic main
+deb http://ppa.launchpad.net/tsbarnes/indicator-keylock-daily/ubuntu bionic main
+deb http://ppa.launchpad.net/noobslab/apps/ubuntu zesty main
+deb http://ppa.launchpad.net/noobslab/indicators/ubuntu zesty main
+deb http://ppa.launchpad.net/atareao/atareao/ubuntu bionic main
+deb http://ppa.launchpad.net/linrunner/tlp/ubuntu bionic main
+deb http://ppa.launchpad.net/webupd8team/atraci/ubuntu zesty main
+deb http://ppa.launchpad.net/dhor/myway/ubuntu bionic main
+deb http://ppa.launchpad.net/yunnxx/gnome3/ubuntu bionic main
+
+#gaming
+deb http://ppa.launchpad.net/ppsspp/stable/ubuntu artful main
+deb http://ppa.launchpad.net/minecraft-installer-peeps/minecraft-installer/ubuntu yakkety main
+
+#add keys with the command below
+#sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys [key]
