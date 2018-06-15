@@ -1,0 +1,30 @@
+#!/bin/bash
+rm -R etc/skel
+rm initrd.img.old
+rm vmlinuz.old
+wget -c http://www.amazonicadesign.com/zip/settings18.7z http://www.amazonicadesign.com/zip/all.list
+7z x settings18.7z -aoa -o.
+mv -f all.list etc/apt/sources.list.d/all.list
+#rm usr/share/plymouth/themes/glow usr/share/plymouth/themes/joy usr/share/plymouth/themes/solar usr/share/plymouth/themes/spacefun usr/share/plymouth/themes/tribar usr/share/plymouth/themes/spacefun usr/share/plymouth/themes/ubuntu-text
+#rm usr/share/plymouth/themes/ubuntu-text/ubuntu-text.plymouth.In usr/share/plymouth/themes/ubuntu-text/ubuntu-text.plymouth.in
+rm -R etc/PinguyB* usr/share/Pinguy* usr/lib/Pinguy* usr/lib/python2.7/dist-packages/Pinguy* usr/bin/Pinguy* usr/share/applications/Pinguy* usr/share/doc/Pinguy* usr/share/lintian/overrides/pinguyb usr/share/lintian/overrides/pinguybuilder var/lib/dpkg/info/pinguy*
+rm -r usr/share/bodhibuilde* etc/bodhibuilder usr/bin/bodhibuilder usr/share/doc/bodhibuilder
+rm usr/share/applications/display-im*
+rm -R usr/share/themes/ZOMG-PONIES! usr/share/themes/Default-xhdpi usr/share/themes/Xfce-orange usr/share/themes/Xfce-saltlake usr/share/themes/Xfce-4.0
+rm var/cache/debconf/*-old
+rm usr/share/applications/display-im* etc/xdg/autostart/*dpkg-dist
+rm usr/share/fonts/truetype/nanum/NanumBarunGothicBold.ttf
+rm usr/share/applications/display-im*
+rm usr/share/applications/audacious-qt*
+rm var/cache/lsc_packages.db
+rm -R usr/share/icons/Humanity-Dark usr/share/icons/ubuntu-mono-dark
+rm usr/share/app-install/icons/hb-icon.svg usr/share/app-install/icons/cortina.svg usr/share/app-install/icons/thawab.svg
+rm var/cache/debconf/*-old var/cache/apt/archives/* var/cache/apt/archives/after/* #var/cache/apt/*
+rm -R root/* root/.*
+mkdir dev/dri/
+mkdir var/crash/
+touch var/crash/crash.ini
+chmod +x var/crash/crash.ini
+find * -type f -name '*-old*' -delete
+find * -type f -name "(__pycache__|\.pyc|\.pyo$)" -delete
+rm inside18 settings18.7z
