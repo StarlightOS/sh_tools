@@ -19,6 +19,7 @@ xorriso -as mkisofs \
 some general git commands
 git add .
 git commit -m -a
+git checkout -b [name_of_your_new_branch]
 git push origin master
 
 The original and altered(direct link) dropbox urls to the installer
